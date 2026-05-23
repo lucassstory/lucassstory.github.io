@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas 的个人主页</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=IBM+Plex+Sans+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --card: #fffaf0;
+      --ink: #14110f;
+      --muted: #756f67;
+      --line: #d7cabb;
+      --accent: #007c89;
+      --shadow: rgba(30, 22, 14, 0.14);
+      --font-display: "Noto Serif SC", serif;
+      --font-body: "IBM Plex Sans SC", sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+
+    header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.125rem;
+    }
+
+    main {
+      flex: 1;
+      max-width: 720px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .post-list {
+      list-style: none;
+    }
+
+    .post-list li {
+      margin-bottom: 1rem;
+    }
+
+    .post-list a {
+      display: block;
+      text-decoration: none;
+      color: var(--ink);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.5rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .post-list a:hover {
+      box-shadow: 0 4px 16px var(--shadow);
+      transform: translateY(-2px);
+    }
+
+    .post-list .post-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: var(--accent);
+    }
+
+    .post-list .post-date {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lucas</h1>
+    <p>记录学习与思考</p>
+  </header>
+
+  <main>
+    <h2 class="section-title">文章</h2>
+    <ul class="post-list">
+      <li>
+        <a href="pretraining-foundation-model.html">
+          <div class="post-title">预训练：基础模型</div>
+          <div class="post-date">2025-05-23</div>
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>Hosted on GitHub Pages</p>
+  </footer>
+</body>
+</html>
